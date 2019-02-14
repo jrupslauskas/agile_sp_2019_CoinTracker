@@ -11,13 +11,42 @@ namespace CoinTracker.Controllers
     {
         public ActionResult Index()
         {
-            var mvcName = typeof(Controller).Assembly.GetName();
-            var isMono = Type.GetType("Mono.Runtime") != null;
 
-            ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Runtime"] = isMono ? "Mono" : ".NET";
+            ViewBag.Message = "Fifty States? No Problem!";
 
             return View();
         }
+
+        public ActionResult AccountHome()
+        {
+
+            ViewBag.Title = "Acocunt Home";
+            ViewBag.Message = "Welcome Back User";
+
+            return View();
+        }
+
+        public ActionResult AccountCreated()
+        {
+
+            ViewBag.Title = "Account Created";
+            ViewBag.Message = "Account Creation Successful";
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult LogIn()
+        {
+            return RedirectToAction("AccountHome");
+        }
+
+        [HttpPost]
+        public ActionResult CreateAccount()
+        {
+            return RedirectToAction("AccountCreated");
+
+        }
+
     }
 }

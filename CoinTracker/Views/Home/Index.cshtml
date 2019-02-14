@@ -1,1 +1,35 @@
-﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+﻿<h1>Welcome To Coin Tracker</h1>
+
+<h2>@ViewBag.Message</h2>
+
+<p>
+    Let's get you started
+</p>
+
+<p>Log In Here</p>
+
+<form method="post" action="/Home/LogIn">
+    First Name<br />
+    <input type="text" name="username" id="username" required="required"><br /><br />
+
+    Last Name<br />
+    <input type="text" name="password" id="password" required="required"><br /><br />
+
+    <input type="submit" value="Log In">
+</form>
+
+
+<p>Create New Account</p>
+    
+<form method="post" action="/Home/CreateAccount">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required="required">
+
+    <label for="password">Password:</label>
+    <input type="text" name="password" id="password" required="required">
+
+    <label for="conirmPassword">Confirm Password:</label>
+    <input type="text" name="confirmPassword" id="confirmPassword" required="required">
+
+    <input type="submit" value="Create Account">
+</form>
