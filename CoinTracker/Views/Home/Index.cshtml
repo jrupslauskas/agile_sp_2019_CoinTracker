@@ -1,41 +1,74 @@
-﻿<h1>Welcome To Coin Tracker</h1>
+﻿<div class="jumbotron text-center">
+    <h1>Welcome To Coin Tracker</h1>
 
-<h2>@ViewBag.Message</h2>
+    <h2>@ViewBag.Message</h2>
 
-<p>
-    Let's get you started
-</p>
+    <p>
+        Let's get you started
+    </p>
+</div><!--End jumbotron class-->
 
-<p>Log In Here</p>
+<div class="container">
 
-<form method="post" action="/Home/LogIn">
-    First Name<br />
-    <input type="text" name="username" id="username" required="required"><br /><br />
+    <!-- This is the form that is visible on load-->
+    <p>Log In Here</p>
 
-    Last Name<br />
-    <input type="text" name="password" id="password" required="required"><br /><br />
+    <form method="post" action="/Home/LogIn">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input class="form-control" type="text" name="username" id="username" required="required">
+        </div>
+        <div class="form-group">
+            <label for="pwd">password:</label>
+            <input class="form-control" type="password" name="pwd" id="pwd" required="required">
+        </div>
+        <div class="float-right">
+            <input class="btn btn-secondary" type="submit" value="Log In">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#createAccountModal">Create Account</button>
+        </div>
+    </form>
 
-    <input type="submit" value="Log In">
-</form>
+
+    <!-- This is the Create account popup it is hidden until the button is clicked -->
+    <div class="modal" id="createAccountModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Create Account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="post" action="/Home/CreateAccount">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input class="form-control" type="text" name="username" id="username" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input class="form-control" type="password" name="pwd" id="pwd" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPwd">Confirm Password:</label>
+                            <input class="form-control" type="password" name="confirmPwd" id="confirmPwd" required="required">
+                        </div>
+
+                        <div class="float-right">
+                            <input type="submit" value="CreateAccount">
+                        </div>
+                    </form>
+                </div>
 
 
-<p>Create New Account</p>
-    
-<form method="post" action="/Home/CreateAccount">
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required="required">
+            </div>
+        </div>
+    </div><!-- End #createAccountModal-->
 
-    <br /><br />
 
-    <label for="password">Password:</label>
-    <input type="text" name="password" id="password" required="required">
 
-    <br /><br />
-
-    <label for="conirmPassword">Confirm Password:</label>
-    <input type="text" name="confirmPassword" id="confirmPassword" required="required">
-
-    <br /><br />
-
-    <input type="submit" value="Create Account">
-</form>
+</div> <!-- end container class-->
