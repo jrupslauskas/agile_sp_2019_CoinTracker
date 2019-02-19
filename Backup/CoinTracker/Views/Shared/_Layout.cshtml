@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewBag.Title</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../Content/stylesheets/styles.css">
+    </head>
+    <body>
+        <header>
+            @*Insert a banner image here so that it'll show up on all pages*@
+
+        </header>
+
+        <main>
+            @*The @RenderBody will display content from the View. Develop page specific <main> content
+             on the Views>Home>page.cshtml. *@ 
+            @RenderBody()
+        </main>
+
+        <footer>
+            @* Insert footer information here so that it'll show up on all pages *@
+        </footer>
+
+
+
+    </body>
+</html>
