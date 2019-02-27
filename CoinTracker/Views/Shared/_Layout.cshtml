@@ -20,23 +20,26 @@
     <header>
 
         @*Insert a banner image here so that it'll show up on all pages*@
+        
 
     </header>
 
     <main>
         @*The @RenderBody will display content from the View. Develop page specific <main> content
             on the Views>Home>page.cshtml. *@
-        <div class="container">
 
-            @RenderBody()
 
-        </div>
+        @RenderBody()
+
+
 
 
     </main>
-
-
-
+    <footer class="page-footer font-small fixed-bottom mt-lg-5">
+        <div class="footer-copyright text-center py-3">
+            © 2018 Copyright: by <em>The Collectors</em></p>
+        </div>
+    </footer>
 
 
 </body>
