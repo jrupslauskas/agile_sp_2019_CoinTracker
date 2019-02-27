@@ -17,6 +17,14 @@ namespace CoinTracker.Controllers
             return View();
         }
 
+        public ActionResult Start()
+        {
+
+            ViewBag.Message = "Let's add to your collection!";
+
+            return View();
+        }
+
         public ActionResult AccountHome()
         {
 
