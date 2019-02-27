@@ -24,6 +24,13 @@
 
     </header>
 
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index" , "Home" )</li>
+            <li>@Html.ActionLink("Start", "Start", "Home")</li>
+            <li>@Html.ActionLink("Create", "AccountCreated", "Home")</li>
+        </ul>
+    </nav>
     <main>
         @*The @RenderBody will display content from the View. Develop page specific <main> content
             on the Views>Home>page.cshtml. *@
