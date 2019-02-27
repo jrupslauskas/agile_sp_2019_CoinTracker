@@ -162,6 +162,8 @@
     <Content Include="Views\Home\CoinStorage.cshtml" />
     <Content Include="Views\Home\HelpfulLinks.cshtml" />
     <Content Include="Views\Home\StateCoinProgramInfo.cshtml" />
+    <Content Include="Views\Home\FeaturedPage.aspx" />
+    <Content Include="Views\Home\FeaturedPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
