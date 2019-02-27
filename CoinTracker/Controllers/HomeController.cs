@@ -35,6 +35,26 @@ namespace CoinTracker.Controllers
             return View();
         }
 
+        public ActionResult CoinCare()
+        {
+            return View();
+        }
+
+        public ActionResult CoinStorage()
+        {
+            return View();
+        }
+
+        public ActionResult HelpfulLinks()
+        {
+            return View();
+        }
+
+        public ActionResult StateCoinProgramInfo()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult LogIn()
         {
