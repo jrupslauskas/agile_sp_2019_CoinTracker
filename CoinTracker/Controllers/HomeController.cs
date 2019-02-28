@@ -63,6 +63,12 @@ namespace CoinTracker.Controllers
             return View();
         }
 
+        public ActionResult FreaturedPage()
+        {
+            return View();
+        }
+
+
         [HttpPost]
         public ActionResult LogIn()
         {

@@ -209,7 +209,6 @@
     <Content Include="Views\Home\CoinStorage.cshtml" />
     <Content Include="Views\Home\HelpfulLinks.cshtml" />
     <Content Include="Views\Home\StateCoinProgramInfo.cshtml" />
-    <Content Include="Views\Home\FeaturedPage.aspx" />
     <Content Include="Views\Home\FeaturedPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
