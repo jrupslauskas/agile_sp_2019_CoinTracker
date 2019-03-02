@@ -1,0 +1,43 @@
+﻿<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../Content/stylesheets/styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+
+        @*Insert a banner image here so that it'll show up on all pages*@
+
+
+    </header>
+    <main>
+        @*The @RenderBody will display content from the View. Develop page specific <main> content
+            on the Views>Home>page.cshtml. *@
+
+
+        @RenderBody()
+
+
+
+
+    </main>
+    <footer class="page-footer font-small fixed-bottom mt-lg-5">
+        <div class="footer-copyright text-center py-3">
+            © 2018 Copyright: by <em>The Collectors</em></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

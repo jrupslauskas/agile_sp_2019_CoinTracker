@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -81,10 +86,7 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\images\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -105,6 +107,56 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\ak.jpg" />
+    <Content Include="Content\images\al.jpg" />
+    <Content Include="Content\images\ar.jpg" />
+    <Content Include="Content\images\az.jpg" />
+    <Content Include="Content\images\ca.jpg" />
+    <Content Include="Content\images\co.jpg" />
+    <Content Include="Content\images\ct.jpg" />
+    <Content Include="Content\images\de.jpg" />
+    <Content Include="Content\images\fl.jpg" />
+    <Content Include="Content\images\ga.jpg" />
+    <Content Include="Content\images\hi.jpg" />
+    <Content Include="Content\images\ia.jpg" />
+    <Content Include="Content\images\id.jpg" />
+    <Content Include="Content\images\il.jpg" />
+    <Content Include="Content\images\in.jpg" />
+    <Content Include="Content\images\ks.jpg" />
+    <Content Include="Content\images\ky.jpg" />
+    <Content Include="Content\images\la.jpg" />
+    <Content Include="Content\images\ma.jpg" />
+    <Content Include="Content\images\md.jpg" />
+    <Content Include="Content\images\me.jpg" />
+    <Content Include="Content\images\mi.jpg" />
+    <Content Include="Content\images\mn.jpg" />
+    <Content Include="Content\images\mo.jpg" />
+    <Content Include="Content\images\ms.jpg" />
+    <Content Include="Content\images\mt.jpg" />
+    <Content Include="Content\images\nc.jpg" />
+    <Content Include="Content\images\nd.jpg" />
+    <Content Include="Content\images\ne.jpg" />
+    <Content Include="Content\images\nh.jpg" />
+    <Content Include="Content\images\nj.jpg" />
+    <Content Include="Content\images\nm.jpg" />
+    <Content Include="Content\images\nv.jpg" />
+    <Content Include="Content\images\ny.jpg" />
+    <Content Include="Content\images\oh.jpg" />
+    <Content Include="Content\images\ok.jpg" />
+    <Content Include="Content\images\or.jpg" />
+    <Content Include="Content\images\pa.jpg" />
+    <Content Include="Content\images\ri.jpg" />
+    <Content Include="Content\images\sc.jpg" />
+    <Content Include="Content\images\sd.jpg" />
+    <Content Include="Content\images\tn.jpg" />
+    <Content Include="Content\images\tx.jpg" />
+    <Content Include="Content\images\ut.jpg" />
+    <Content Include="Content\images\va.jpg" />
+    <Content Include="Content\images\vt.jpg" />
+    <Content Include="Content\images\wa.jpg" />
+    <Content Include="Content\images\wi.jpg" />
+    <Content Include="Content\images\wv.jpg" />
+    <Content Include="Content\images\wy.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -160,6 +212,11 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\CoinCare.cshtml" />
+    <Content Include="Views\Home\CoinStorage.cshtml" />
+    <Content Include="Views\Home\HelpfulLinks.cshtml" />
+    <Content Include="Views\Home\StateCoinProgramInfo.cshtml" />
+    <Content Include="Views\Home\FeaturedPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
@@ -198,5 +255,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
 </Project>

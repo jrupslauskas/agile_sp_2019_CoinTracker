@@ -17,6 +17,14 @@ namespace CoinTracker.Controllers
             return View();
         }
 
+        public ActionResult Start()
+        {
+
+            ViewBag.Message = "Let's add to your collection!";
+
+            return View();
+        }
+
         public ActionResult AccountHome()
         {
 
@@ -34,6 +42,32 @@ namespace CoinTracker.Controllers
 
             return View();
         }
+
+        public ActionResult CoinCare()
+        {
+            return View();
+        }
+
+        public ActionResult CoinStorage()
+        {
+            return View();
+        }
+
+        public ActionResult HelpfulLinks()
+        {
+            return View();
+        }
+
+        public ActionResult StateCoinProgramInfo()
+        {
+            return View();
+        }
+
+        public ActionResult FreaturedPage()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public ActionResult LogIn()
