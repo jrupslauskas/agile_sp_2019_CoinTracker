@@ -15,6 +15,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,6 +41,10 @@
             <li class="nav-item">
                 @Html.ActionLink("Storage", "CoinStorage", "CoinStorage", new { @class = "nav-link" })
             </li>
+            <li class="nav-item">
+                @Html.ActionLink("Links", "HelpfulLinks", "HelpfulLinks", new { @class = "nav-link" })
+            </li>
+
         </ul>
     </nav>
     <main>
@@ -50,7 +57,7 @@
 
 
     </main>
-    <footer class="page-footer font-small fixed-bottom mt-lg-5">
+    <footer class="page-footer font-small position-sticky mt-lg-5">
         <div class="footer-copyright text-center py-3">
             © 2018 Copyright: by <em>The Collectors</em></p>
         </div>
