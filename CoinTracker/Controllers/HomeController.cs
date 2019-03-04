@@ -63,7 +63,7 @@ namespace CoinTracker.Controllers
             return View();
         }
 
-        public ActionResult FreaturedPage()
+        public ActionResult FeaturedPage()
         {
             return View();
         }
