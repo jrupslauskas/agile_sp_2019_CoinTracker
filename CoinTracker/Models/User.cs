@@ -25,6 +25,12 @@ namespace CoinTracker.Models
             this.password = password;
         }
 
+
+    public User()
+    {
+     
+    }
+
     }
 
     public class UserDBContext : DbContext
