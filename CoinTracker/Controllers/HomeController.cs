@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoinTracker.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -34,11 +35,11 @@ namespace CoinTracker.Controllers
             return View();
         }
 
-        public ActionResult AccountCreated()
+        public ActionResult AccountCreated(User user)
         {
 
             ViewBag.Title = "Account Created";
-            ViewBag.Message = "Account Creation Successful";
+            ViewBag.Message = "Thanks for signing up, " + user.userName;
 
             return View();
         }
@@ -76,11 +77,22 @@ namespace CoinTracker.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateAccount()
+        public ActionResult CreateAccount(string username, string pwd, string confirmPwd)
         {
-            return RedirectToAction("AccountCreated");
+            if (pwd == confirmPwd)
+            {
+                User user = new User(username, pwd);
 
-        }
+                return RedirectToAction("AccountCreated", user);
+            }
+            else
+            {
+
+                return RedirectToAction("Start");
+
+            }
+
+            }
 
     }
 }
