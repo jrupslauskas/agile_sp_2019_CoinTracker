@@ -21,28 +21,43 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <img src="../../Content/images/CoinTracker_Logo.jpg" />
+=======
+
+        @*Insert a banner image here so that it'll show up on all pages*@
+        <img class="mx-auto d-block img-fluid" src="../../Content/images/CoinTracker_Logo.jpg" />
+
+
+>>>>>>> 01079d19f174394fa584f02bad6d609b6e3f7044
     </header>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
         @Html.ActionLink("Home", "Index", "Home", new { @class = "navbar-brand" })
-            
-        <ul class="navbar-nav">
 
-            <li class="nav-item">
-                @Html.ActionLink("Featured", "FeaturedPage", "FeaturedPage", new { @class = "nav-link" })
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Care", "CoinCare", "CoinCare", new { @class = "nav-link" })
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Storage", "CoinStorage", "CoinStorage", new { @class = "nav-link" })
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Links", "HelpfulLinks", "HelpfulLinks", new { @class = "nav-link" })
-            </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
 
-        </ul>
+                <li class="nav-item">
+                    @Html.ActionLink("Featured", "FeaturedPage", "FeaturedPage", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Care", "CoinCare", "CoinCare", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Storage", "CoinStorage", "CoinStorage", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Links", "HelpfulLinks", "HelpfulLinks", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Info", "StateCoinProgramInfo", "StateCoinProgramInfo", new { @class = "nav-link" })
+                </li>
+            </ul>
+        </div>
     </nav>
     <main>
 
