@@ -10,6 +10,9 @@ namespace CoinTracker.Controllers
 {
     public class HomeController : Controller
     {
+
+        UserDBContext db = new UserDBContext();
+
         public ActionResult Index()
         {
 
@@ -38,8 +41,12 @@ namespace CoinTracker.Controllers
         public ActionResult AccountCreated(User user)
         {
 
+            db.Users.Add(user);
+            db.SaveChanges();
+
             ViewBag.Title = "Account Created";
             ViewBag.Message = "Thanks for signing up, " + user.userName;
+            
 
             return View();
         }

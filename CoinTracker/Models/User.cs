@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 
 namespace CoinTracker.Models
 {
+    [Table("User")]
     public class User
     {
-        private string userID { get; set; }
+        [Key]
+        public int userID { get; set; }
         public string userName { get; set; }
-        private string password { get; set; }
+        public string password { get; set; }
         private string email { get; set; }
         private string firstName { get; set; }
         private string lastName { get; set; }
