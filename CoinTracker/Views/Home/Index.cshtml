@@ -49,6 +49,19 @@
                     <form method="post" action="/Home/CreateAccount">
                         <div class="input-group mb-4 shadow">
                             <div class="input-group-prepend">
+                                <span class="input-group-text">Name:</span>
+                            </div>
+                            <input type="text" class="form-control" name="fName" placeholder="First">
+                            <input type="text" class="form-control" name="lName" placeholder="Last">
+                        </div>
+                        <div class="input-group mb-4 shadow">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" for="username">Email:</span>
+                            </div>
+                            <input class="form-control" type="email" name="email" id="email" required="required">
+                        </div>
+                        <div class="input-group mb-4 shadow">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text" for="username">Username:</span>
                             </div>
                             <input class="form-control" type="text" name="username" id="username" required="required">
