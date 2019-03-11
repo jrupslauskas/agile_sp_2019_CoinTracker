@@ -86,7 +86,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\images\App_LocalResources\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -218,6 +220,7 @@
     <Content Include="Views\Home\HelpfulLinks.cshtml" />
     <Content Include="Views\Home\StateCoinProgramInfo.cshtml" />
     <Content Include="Views\Home\FeaturedPage.cshtml" />
+    <Content Include="Views\Home\about.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
