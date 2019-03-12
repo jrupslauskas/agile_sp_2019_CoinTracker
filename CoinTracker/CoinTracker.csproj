@@ -221,6 +221,7 @@
     <Content Include="Views\Home\StateCoinProgramInfo.cshtml" />
     <Content Include="Views\Home\FeaturedPage.cshtml" />
     <Content Include="Views\Home\about.cshtml" />
+    <Content Include="Views\Home\SupportTheTroops.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />

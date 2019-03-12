@@ -81,6 +81,11 @@ namespace CoinTracker.Controllers
             return View();
         }
 
+        public ActionResult SupportTheTroops()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public ActionResult LogIn()
